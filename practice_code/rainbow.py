@@ -11,6 +11,7 @@ def crack():
             rainbow_table[hashed_word] = word
 
         # Use the Rainbow table to determine the plain text password
+        # The 'keys()' method iterates through the list
         for user in leaked_users_table.keys():
             try:
                 print(user + ":\t" +
