@@ -40,3 +40,7 @@ app = Flask(__name__)
 def headers(jwt):
     print(jwt)
     return 'not implemented'
+
+@app.route('/list')
+def get_list():
+    return 'not implemented'
